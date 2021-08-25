@@ -4928,6 +4928,11 @@ loadExternalHtml = function(includes, callback) {
 }
 
 $(document).ready( async function() {
+	setTimeout( () => {
+		// don't show tha load-schreen for more than 10-seconds
+		// (so that it will be removed even if something breaks)
+		IO.removeLoadScreen();
+	}, 10000 );
 
 	// include external HTML-files:
 
