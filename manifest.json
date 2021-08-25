@@ -110,5 +110,13 @@
 	    "sizes": "2000x1300",
 	    "type": "image/webp"
 	  }
-	]
+	],
+	"related_applications": [
+	  {
+	    "platform": "chrome_web_store",
+	    "url": "https://chrome.google.com/webstore/detail/troff-training-with-music/mebbbmcjdgoipnkpmfjndbolgdnakppl",
+	    "id": "mebbbmcjdgoipnkpmfjndbolgdnakppl"
+	  }
+	],
+	"prefer_related_applications": false
 }
