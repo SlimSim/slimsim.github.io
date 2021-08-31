@@ -79,7 +79,7 @@ var newAppCaches = [
 			"/assets/logos/logo-512.png",
 			"/assets/logos/logo-512-maskable.png",
 			"/manifest.json",
-			"privacy_policy.html"
+			"privacy_policy.html",
 			"/LICENSE.html",
 			"/terms.html", //<-- should not be cached, but loaded every time to get the latest version.
 			"/README.md",
