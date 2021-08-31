@@ -56,6 +56,11 @@
 	],
 	"shortcuts" : [
 		{
+			"name": "Troff",
+			"url": "/",
+			"description": "Start the music player and begin your training!"
+		},
+		{
 			"name": "Demo song",
 			"url": "/#26&demo.mp4 ",
 			"description": "Download the demo-song with markers, colors and see what you can do with Troff!",
