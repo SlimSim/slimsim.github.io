@@ -58,7 +58,8 @@
 		{
 			"name": "Troff",
 			"url": "/",
-			"description": "Start the music player and begin your training!"
+			"description": "Start the music player and begin your training!",
+			"icons": [{ "src": "/assets/logos/logo-192-maskable.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" }]
 		},
 		{
 			"name": "Demo song",
