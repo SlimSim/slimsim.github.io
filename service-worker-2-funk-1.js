@@ -1,19 +1,16 @@
 let appCaches = [
 	{
-		name: 'core-v1.4.25',
+		name: 'core-v1.4.15',
 		urls: [
 			"/",
 			"index.html",
-			"privacy_policy.html",
 			"main.js"
 		]
 	},
 	{
-		name: 'app-assets-v1.10',
+		name: 'app-assets-v1.8',
 		urls: [
 			"assets/logos/favicon.ico",
-			"assets/logos/petra-logo.svg",
-			"assets/logos/troff-logo.svg",
 			"assets/logos/slim-sim-logo.svg",
 			"assets/logos/slim-sim-logo-128.png",
 			"assets/logos/slim-sim-logo-192-non-transparent.png",
@@ -23,19 +20,9 @@ let appCaches = [
 		]
 	},
 	{
-		name: 'internal-assets-v1.0.1',
-		urls: [
-			"assets/internal/cookie_consent.js",
-			"assets/internal/indexed_db.js",
-			"assets/internal/notify-js/notify.css",
-			"assets/internal/notify-js/notify.config.js"
-		]
-	},
-	{
-		name: 'external-assets-v1.5.0',
+		name: 'external-assets-v1.4.1',
 		urls: [
 			"assets/external/jquery-3.4.1.min.js",
-			"assets/external/notify-js/notify.min.js",
 			"assets/external/bootstrap-4.4.1/bootstrap.min.css",
 			"assets/external/bootstrap-4.4.1/bootstrap.bundle.min.js",
 			"assets/external/fontawesome-free-5.12.1-web-test/css/all.min.css",
@@ -103,7 +90,6 @@ self.addEventListener( "fetch", event => {
 		.then( cachedResponse => {
 			return cachedResponse || fetch( event.request );
 			/*
-			// tror att felet med denna är att den INTE returnerar något i sista elsen?
 			if( cachedResponse ) {
 				return cachedResponse;
 			} else if( event.request.url.indexOf( "google" ) =! -1 ) {
